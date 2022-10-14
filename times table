@@ -1,0 +1,14 @@
+times = [0,1,2,3,5,6,7,8,9,10,11,12]
+while True:
+    user = int(input("enter a number from 0  to 12"))
+    if user > 12:
+        print("out of range")
+        continue
+    else:
+        for i in times:
+            if user < 0:
+                user = user * -1
+                times = times.reverse()
+                print(i, "x", user," = ", i * user)
+            else:
+                print(i, "x ", user," =", i * user)
